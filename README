@@ -1,0 +1,39 @@
+To compile the tool in a linux platform, type:
+
+"make floorplanner"
+
+
+
+
+To run the tool on a certain file (e.g module.file,net.file,pio.file), type:
+
+"./floorplanner -m module.file -n net.file -p pio.file" 
+
+
+
+
+
+If you want to put the debug output to another file and only show significant results on the terminal, type: 
+
+"./floorplanner -m module.file -n net.file -p pio.file > file1.out"
+
+
+
+
+or, to ignore the debug outputs:
+
+"./floorplanner -m module.file -n net.file -p pio.file > /dev/null"
+
+
+
+
+
+The tool, by default will show the output cost of the Simulated annealing technique. To see the output of the genetic algorithm technique,
+locate the main function in the file "fp.c" and comment out the "anneal" function while uncommenting the "genetic" function. 
+
+
+
+
+
+Yours Sincerely,
+Saunak 
